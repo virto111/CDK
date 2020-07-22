@@ -5,7 +5,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 @Component({
   selector: 'app-subscribe',
   templateUrl: './subscribe.component.html',
-  styleUrls: ['./subscribe.component.scss']
+  styles: ['']
 })
 export class SubscribeComponent implements OnInit {
   frmSubscribe = this.fb.group({

@@ -55,6 +55,12 @@
   </div>
 </div>
 
+<!-- 
+  !Нещо много важно което може би винаги съм пропускал или не съм разбирал изцяло
+  * Долу може да видим следното нещо: let-close="close" -> close е функция, но тя трябва да дойде от Parent context-a.
+  * Поне така съм чувал, НО КОЕ Е PARENT CONTEXT-A по дяволите???
+  * И отговора е: явно там където този <ng-template> e "показан" със ngTemplateOutlet
+-->
 <ng-template #tpl let-close="close">
   <div class="modal-card">
     <section class="modal-card-body">

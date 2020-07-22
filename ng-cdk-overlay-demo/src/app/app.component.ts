@@ -7,7 +7,7 @@ import { SubscribeComponent } from './examples/subscribe/subscribe.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styles: ['']
 })
 export class AppComponent {
   content = 'A simple string content modal overlay';

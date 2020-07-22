@@ -4,7 +4,7 @@ import { MyOverlayRef } from 'src/app/myoverlay-ref';
 @Component({
   selector: 'app-yes-no-dialog',
   templateUrl: './yes-no-dialog.component.html',
-  styleUrls: ['./yes-no-dialog.component.scss']
+  styles: ['']
 })
 export class YesNoDialogComponent implements OnInit {
   constructor(private ref: MyOverlayRef) {}

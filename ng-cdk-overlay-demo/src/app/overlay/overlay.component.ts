@@ -4,7 +4,7 @@ import { MyOverlayRef } from '../myoverlay-ref';
 @Component({
   selector: 'app-overlay',
   templateUrl: './overlay.component.html',
-  styleUrls: ['./overlay.component.scss']
+  styles: ['']
 })
 export class OverlayComponent implements OnInit {
   contentType: 'template' | 'string' | 'component';

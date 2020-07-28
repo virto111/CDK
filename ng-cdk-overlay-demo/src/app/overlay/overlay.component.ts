@@ -6,14 +6,17 @@ import { MyOverlayRef } from '../myoverlay-ref';
   templateUrl: './overlay.component.html',
   styles: ['']
 })
-export class OverlayComponent implements OnInit {
+export class OverlayComponent implements OnInit { // ! Това е динамично създаден компонент. Създаден е в OverlayService-a
   contentType: 'template' | 'string' | 'component';
   content: string | TemplateRef<any> | Type<any>;
   context;
 
+  // * тук инжектираме [OverlayComponent] със OverlayRef компонента
+  // * инжекцията става при динамичното му създаване в OverlayService-a
   constructor(private ref: MyOverlayRef) {}
 
   close() {
+    // console.log('Value ::: ', value);
     this.ref.close(null);
   }
 

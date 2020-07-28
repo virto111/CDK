@@ -8,10 +8,13 @@
     </ng-container>
 
     <ng-container *ngSwitchCase="'template'">
+      <!-- ! Важното тук е [content] - това реално е референция към #tmp във <ng-template #tmp> -->
       <ng-container *ngTemplateOutlet="content; context: context"></ng-container>
     </ng-container>
 
     <ng-container *ngSwitchCase="'component'">
+      <!-- * тук пак важното е [content] -това е референция, този път към компонента, 
+           * който консуматора на "плъгина" подава, за да дефинира кънтента -->
       <ng-container *ngComponentOutlet="content"></ng-container>
     </ng-container>
 

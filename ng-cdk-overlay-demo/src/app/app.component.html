@@ -59,7 +59,12 @@
   !Нещо много важно което може би винаги съм пропускал или не съм разбирал изцяло
   * Долу може да видим следното нещо: let-close="close" -> close е функция, но тя трябва да дойде от Parent context-a.
   * Поне така съм чувал, НО КОЕ Е PARENT CONTEXT-A по дяволите???
-  * И отговора е: явно там където този <ng-template> e "показан" със ngTemplateOutlet
+  * И отговора е: явно там където този <ng-template> e "показан" със *ngTemplateOutlet, a това е във самия overlay.component.ts !!!
+  ! this.context = {
+  ! close: this.ref.close.bind(this.ref)
+  ! };
+  * Долу дефинираме [cobtext] -> a в компонента [context.close] обекта
+  * *ngTemplateOutlet="content; context: context"
 -->
 <ng-template #tpl let-close="close">
   <div class="modal-card">

@@ -22,6 +22,7 @@ export class MyOverlayRef<R = any, T = any> {
   }
 
   close(data?: R) {
+    console.log('Value ::: ', data);
     this._close('close', data);
   }
 
